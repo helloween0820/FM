@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="modal">
+        <div class="content-modal">
+          <img src="assets/illustration-article.svg" alt="" class="img" />
+          <div class="content-text">
+            <p>learning</p>
+          </div>
+          <h4 style="font-weight: 600; font-size: 15px">
+            Published 21 Dec 2023
+          </h4>
+          <h2 class="weights">HTML & CSS foundations</h2>
+          <p style="color: hsl(0, 0%, 50%); font-size: 15px">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <div class="avatar">
+            <img src="assets/image-avatar.webp" alt="" class="img-avatar" />
+            <h5 class="weights">Greg Hooper</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const h2 = document.querySelector("h2");
+      const modal = document.querySelector(".modal");
+
+      h2.addEventListener("mouseover", () => {
+        modal.classList.add("modal-hover");
+      });
+
+      h2.addEventListener("mouseout", () => {
+        modal.classList.remove("modal-hover");
+      });
+    </script>
+  </body>
+</html>

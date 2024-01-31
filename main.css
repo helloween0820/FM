@@ -1,0 +1,78 @@
+body {
+  background: hsl(47, 88%, 63%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.content {
+  height: 96vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 12px 0px -4px rgba(0, 0, 0, 0.83);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  width: 377px;
+}
+.content-modal {
+  height: 454px;
+  margin-top: 22px;
+  width: 330px;
+}
+.avatar {
+  height: 40px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+.content-text {
+  align-items: center;
+  background: hsl(47, 88%, 63%);
+  border-radius: 3px;
+  display: flex;
+  font-size: 13px;
+  font-weight: 500;
+  justify-content: center;
+  margin-top: 17px;
+  height: 24px;
+  width: 70px;
+}
+.img {
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+}
+.img-avatar {
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+.weights {
+  font-weight: 800;
+}
+
+h2 {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+h2:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.modal.modal-hover {
+  box-shadow: 16px 20px 0px -4px rgba(0, 0, 0, 0.83);
+}
+
+h2:hover + .modal.modal-hover {
+  box-shadow: 16px 20px 0px -4px rgba(0, 0, 0, 0.83);
+}
